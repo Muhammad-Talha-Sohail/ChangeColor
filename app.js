@@ -1,7 +1,7 @@
 function chgcolor()
-{
+{  
     let str = "#";
-    for(let i=0;i<=5;i++)
+    for(let i=0;i<6;i++)
     {
         let rand = Math.random()*15;
         rnd = rand.toFixed(0)
@@ -34,6 +34,6 @@ function chgcolor()
       str += rnd;
         }
     }
-    document.getElementById("re").innerText=str;
+    document.getElementById("re").innerText+=" \n"+str;
     document.body.style.background= str; 
 }
